@@ -5,26 +5,6 @@ import java.io.PrintWriter;
 import java.io.IOException;
 
 public class Menu {
-    public static void customerMenu(BufferedReader in, PrintWriter out) throws IOException {
-        out.println("----Customer Management System---");
-        out.println("1. ");
-        out.println("2. ");
-        out.println("3. ");
-        out.println("4. ");
-        out.println("0. Exit");
-        int userInput = Integer.parseInt(in.readLine());
-
-    }
-
-    public static void rentalMenu(BufferedReader in, PrintWriter out) throws IOException {
-        out.println("----Rentals---");
-        out.println("1. ");
-        out.println("2. ");
-        out.println("3. ");
-        out.println("4. ");
-        out.println("0. Exit");
-        int userInput = Integer.parseInt(in.readLine());
-    }
 
     public static void mainMenu(BufferedReader in, PrintWriter out, ArrayList<Robot> robots, ArrayList<Customer> customers) throws IOException {
         boolean menuRunning = true;
@@ -36,6 +16,8 @@ public class Menu {
             out.println("4. Reports");
             out.println("0. Exit");
             try {
+                out.print("\nEnter: ");
+                out.flush();
                 int userInput = Integer.parseInt(in.readLine());
 
                 switch (userInput) {

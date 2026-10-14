@@ -16,19 +16,25 @@ public class RentalMenu {
             out.println("4. Schedule Pickup");
             out.println("0. Back to Main Menu");
             try {
+                out.print("\nEnter: ");
+                out.flush();
                 int userInput = Integer.parseInt(in.readLine());
                 switch (userInput) {
                     case 1: {
+                        out.println("Not implemented yet.");
                         break;
                     }
                     case 2: {
+                        out.println("Not implemented yet.");
                         break;
 
                     }
                     case 3: {
+                        out.println("Not implemented yet.");
                         break;
                     }
                     case 4: {
+                        out.println("Not implemented yet.");
                         break;
                     }
                     case 0: {

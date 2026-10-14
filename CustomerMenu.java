@@ -65,6 +65,8 @@ public class CustomerMenu {
             out.println("8. Facility Distance");
             out.println("9. Status");
             out.println("0. Cancel");
+            out.print("\nEnter: ");
+            out.flush();
             int userInput = Integer.parseInt(in.readLine());
             switch (userInput) {
                 case 1: {
@@ -193,6 +195,8 @@ public class CustomerMenu {
             out.println("4. Search Customer");
             out.println("0. Back to Main Menu");
             try {
+                out.print("\nEnter: ");
+                out.flush();
                 int userInput = Integer.parseInt(in.readLine());
                 switch (userInput) {
                   case 1: {

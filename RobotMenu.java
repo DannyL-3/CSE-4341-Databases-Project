@@ -48,7 +48,7 @@ public class RobotMenu {
     }
 
     public static void editRobot(BufferedReader in, PrintWriter out, ArrayList<Robot> robots) throws IOException {
-        out.print("Enter the serial number of the robot you wish to edit:");
+        out.print("Enter the serial number of the robot you wish to edit: ");
         out.flush();
         String serialNumber = in.readLine();
         Robot currRobot = null;
@@ -72,6 +72,8 @@ public class RobotMenu {
             out.println("10. Warranty Expiration");
             out.println("11. Update Status");
             out.println("0. Cancel");
+            out.print("\nEnter: ");
+            out.flush();
             int userInput = Integer.parseInt(in.readLine());
             switch (userInput) {
                 case 1: {
@@ -216,6 +218,8 @@ public class RobotMenu {
             out.println("4. Search Robot");
             out.println("0. Back to Main Menu");
             try {
+                out.print("\nEnter: ");
+                out.flush();
                 int userInput = Integer.parseInt(in.readLine());
                 switch (userInput) {
                   case 1: {
