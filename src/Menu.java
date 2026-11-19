@@ -1,12 +1,10 @@
-
-import java.util.ArrayList;
 import java.io.BufferedReader;
 import java.io.PrintWriter;
 import java.io.IOException;
 
 public class Menu {
 
-    public static void mainMenu(BufferedReader in, PrintWriter out, ArrayList<Robot> robots, ArrayList<Customer> customers) throws IOException {
+    public static void mainMenu(BufferedReader in, PrintWriter out) throws IOException {
         boolean menuRunning = true;
         while (menuRunning) {
             out.println("----Warehouse Management System---");
@@ -22,11 +20,11 @@ public class Menu {
 
                 switch (userInput) {
                     case 1: {
-                        RobotMenu.robotMenu(in, out, robots);
+                        RobotMenu.robotMenu(in, out);
                         break;
                     }
                     case 2: {
-                        CustomerMenu.customerMenu(in, out, customers);
+                        CustomerMenu.customerMenu(in, out);
                         break;
                     }
                     case 3: {
@@ -34,7 +32,7 @@ public class Menu {
                         break;
                     }
                     case 4: {
-                        out.println("report");
+                        ReportsMenu.reportsMenu(in, out);
                         break;
                     }
                     case 0: {
